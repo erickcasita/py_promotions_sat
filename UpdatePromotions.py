@@ -44,4 +44,12 @@ def Remove_promotions_tradicional():
         file.close()
     
 if __name__ == '__main__':
-    Remove_promotions_tradicional()
+    print("----------------------------")
+    print("|1.- Delete Promotions ----|")
+    print("|2.-  Add Promotions    ---|")
+    print("----------------------------")
+    opt = int(input())
+    if(opt==1):
+        Remove_promotions_tradicional()
+    if(opt==2):
+        pass
