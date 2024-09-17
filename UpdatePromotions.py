@@ -32,8 +32,7 @@ def Remove_promotions_tradicional():
                     countrows+=1
                     file.write(f"La promocion: {cvepmc} {nompmc} del cliente: {cvecli} {nomcli} se ha eliminado \n")
                 else:
-                    file.write(f"La promocion: {cvepmc} {nompmc} del cliente: {cvecli} {nomcli} no esta asignada \n")
-                    
+                    file.write(f"La promocion: {cvepmc} {nompmc} del cliente: {cvecli} {nomcli} no esta asignada \n")    
                 sql.commit()
                 sql.close()
     except Exception as ex:
@@ -44,4 +43,12 @@ def Remove_promotions_tradicional():
         file.close()
     
 if __name__ == '__main__':
-    Remove_promotions_tradicional()
+    print("----------------------------")
+    print("|1.- Delete Promotions ----|")
+    print("|2.-  Add Promotions    ---|")
+    print("----------------------------")
+    opt = int(input())
+    if(opt==1):
+        Remove_promotions_tradicional()
+    if(opt==2):
+        pass
