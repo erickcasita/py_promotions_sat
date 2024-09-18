@@ -91,7 +91,7 @@ if __name__ == '__main__':
     print("|1.- Delete Promotions ----|")
     print("|2.-  Add Promotions    ---|")
     print("----------------------------")
-    opt = int(input())
+    opt = int(input("Option: "))
     if(opt==1):
         Remove_promotions_tradicional()
     if(opt==2):
