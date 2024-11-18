@@ -1,5 +1,6 @@
 import json,sys,datetime
 from Connection import connection
+from Utils import header
 def Remove_promotions_tradicional():
     with open ("json/promos-tradicional.json", "r") as r:
         promotions_tradicional = json.load(r)
@@ -87,6 +88,7 @@ def Add_promotions_mayoristas():
         file.close()
         
 if __name__ == '__main__':
+    header()
     print("----------------------------")
     print("|1.- Delete Promotions ----|")
     print("|2.-  Add Promotions    ---|")
