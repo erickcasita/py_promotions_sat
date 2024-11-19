@@ -14,7 +14,7 @@ Download the project from Github to a local folder
 
 ## Config
 
-Create directory named "json" and create tree files names:
+Create directory named "json" and create three files names:
 
 - clientes-mayoristas.json
 
